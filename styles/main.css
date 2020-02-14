@@ -1,0 +1,137 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* contiene todo en un columna centrada */
+.contenedor {
+  max-width: 960px;
+  margin: 0px auto;
+  /* para que deje el espacio a lado y lado*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* para que sus elementos queden en linea*/
+  padding: 0px 8px;
+  /* espacio a lado y lado*/
+}
+
+/* busqueda */
+.mainNav {
+  background-color: #3C948B;
+}
+
+.mainNav__contenedor {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* sigo sin entender de que depende que este funcione*/
+}
+
+/* */
+.mainNav__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 8px;
+  font-size: .8em;
+}
+
+.mainNav__link:hover {
+  background-color: #3F3F3F;
+}
+
+.mainnav__link:nth-child(1) {
+  margin-left: -8px;
+}
+
+/*
+        Main header
+    */
+.mainInicio {
+  background-color: #3F3F3F;
+  padding: 10px 0px;
+}
+
+.mainInicio__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainInicio__logo {
+  width: 120px;
+}
+
+.mainInicio__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+.mainInicio__link:hover {
+  color: #3C948B;
+}
+
+.buscador {
+  height: 35px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.buscador__input {
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  height: 100%;
+  border: 1px solid gray;
+  width: 80%;
+  padding: 6px 8px;
+}
+
+.buscador__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.buscador__input::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+.buscador__input:-ms-input-placeholder {
+  color: lightgray;
+}
+
+.buscador__input::-ms-input-placeholder {
+  color: lightgray;
+}
+
+.buscador__input::placeholder {
+  color: lightgray;
+}
+
+.buscador__boton {
+  height: 100%;
+  width: 20%;
+  background-color: #3C948B;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  border: none;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  outline: none;
+}
+
+.buscador__button:hover {
+  background-color: #71c5bd;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
